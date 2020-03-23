@@ -35,6 +35,8 @@ class EmergencySkill(MycroftSkill):
                self.speak_dialog("Emergency.heart.unconscious")
        elif type == 'haemorrhage':
            self.speak_dialog("Emergency.haemorrhage")
+       elif type == 'fainting':
+           self.speak_dialog("Emergency.fainting")
        else:
             self.speak("please call 190")
 
